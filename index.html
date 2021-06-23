@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Slider</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+
+    
+   <nav>
+       <h1>Image-Slider</h1>
+   </nav>
+
+   <div class="slideContainer">
+       <div class="imagesContainer"> 
+       <div id="birdCircle" class="slide">
+           <img src="./Images/bird.jpg" alt="bird pic">
+       </div>
+       <div id="eleCircle" class="slideHidden"><img src="./Images/elephant.jpg" alt=""></div>
+       <div id="leoCircle" class="slideHidden"><img src="./Images/leopard.jpg" alt=""></div>
+       <div id="rhinoCircle" class="slideHidden"><img src="./Images/rhino.jpg" alt=""></div>
+       <div id="turtCircle" class="slideHidden"><img src="./Images/turtle.jpg" alt=""></div>
+       <div id="zebraCircle" class="slideHidden"><img src="./Images/zebra.jpg" alt=""></div>
+       </div>
+
+       <div class="buttons" id="leftArrow"><img src="./Images/left-arrow.png" alt=""></div>
+       <div class="buttons" id="rightArrow"><img src="./Images/right-arrow.png" alt=""></div>
+
+         <div class="circleButtons">
+       <div data-name="birdCircle" class="circle"></div>
+       <div data-name="eleCircle" class="circle"></div>
+       <div data-name="leoCircle" class="circle"></div>
+       <div data-name="rhinoCircle" class="circle"></div>
+       <div data-name="turtCircle" class="circle"></div>
+       <div data-name="zebraCircle" class="circle"></div>
+   </div>
+   
+   </div>
+
+   
+
+    <script src="./app.js"></script>
+  </body>
+</html>
