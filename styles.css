@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 1em;
+  color: white;
+}
+
+ 
+
+nav {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+}
+
+.slideContainer {
+  width: 60%;
+  margin: 3em auto;
+  max-height: 750px;
+  max-width: 750px;
+  background-color: rgb(146, 135, 135);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1em solid gray;
+  border-radius: 0.7em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.imagesContainer {
+  display: flex;
+}
+
+img {
+  width: 85%;
+  margin: 1em auto;
+  display: block;
+}
+
+#leftArrow {
+  width: 7%;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  cursor: pointer;
+
+}
+
+.circleButtons {
+  display: flex;
+  margin: 0.5em 0.5em 1em 0.5em;
+}
+.circle {
+  height: 10px;
+  width: 10px;
+  margin: 0 0.3em;
+  background-color: black;
+  cursor: pointer;
+}
+
+#rightArrow {
+  width: 7%;
+  position: absolute;
+  left: 93%;
+  top: 40%;
+  cursor: pointer;
+}
+.slideHidden {
+  display: none;
+  animation: invisible 400ms ease 0s forwards;
+}
+
+@keyframes invisible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.slide {
+  animation: visible 400ms ease 0s forwards;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
